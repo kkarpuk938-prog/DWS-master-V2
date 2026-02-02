@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | ООО ИДМ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="logo">ИДМ<span>.METAL</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="contact.html" class="active">Заказать расчет</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container page-padding">
+        <div class="contact-wrapper animate__animated animate__fadeIn">
+            <div class="form-container">
+                <h2>Рассчитать стоимость</h2>
+                <p>Отправьте параметры вашего заказа, и наш менеджер свяжется с вами в течение часа.</p>
+                <form id="tg-form">
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" id="phone" placeholder="Контактный телефон" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" rows="5" placeholder="Описание задачи (материал, толщина, объем)..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Отправить в Telegram</button>
+                    <div id="status"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
